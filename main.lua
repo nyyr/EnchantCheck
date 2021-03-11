@@ -19,7 +19,7 @@ local libItemUpgrade = LibStub("LibItemUpgradeInfo-1.0")
 -- Version
 ----------------------------------------------
 EnchantCheck.version = "@project-version@"
-EnchantCheck.authors = "nyyr, bsmorgan"
+EnchantCheck.authors = "nyyr, bsmorgan, whatisboom"
 
 -- Current max level for automated self-checks
 local MAX_LEVEL = 110
@@ -43,18 +43,18 @@ local ClassColor = {
 -- What slots need enchants?
 local CheckSlotEnchant = {
 	[INVSLOT_HEAD] = false,
-	[INVSLOT_NECK] = true,
-	[INVSLOT_SHOULDER] = true,
+	[INVSLOT_NECK] = false,
+	[INVSLOT_SHOULDER] = false,
 	[INVSLOT_BACK] = true,
-	[INVSLOT_CHEST] = false,
+	[INVSLOT_CHEST] = true,
 	[INVSLOT_BODY] = false, -- shirt
 	[INVSLOT_TABARD] = false,
-	[INVSLOT_WRIST] = false,
+	[INVSLOT_WRIST] = true,
 
 	[INVSLOT_HAND] = true,
 	[INVSLOT_WAIST] = false,
 	[INVSLOT_LEGS] = false,
-	[INVSLOT_FEET] = false,
+	[INVSLOT_FEET] = true,
 	[INVSLOT_FINGER1] = true,
 	[INVSLOT_FINGER2] = true,
 	[INVSLOT_TRINKET1] = false,
